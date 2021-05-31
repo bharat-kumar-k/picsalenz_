@@ -1,0 +1,415 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family:"Alegreya Sans SC", sans-serif;
+
+}
+
+.body {
+    margin: 0;
+   font-family:"Alegreya Sans SC", sans-serif;
+   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 767px) {
+   .ls {
+        position: fixed;
+        font-size: 10px;
+       
+    }
+
+    div.lg{
+        content: url("./images/favicon.ico");
+        height: 45px;
+    }
+
+    div.bm{
+        content:url("./images/picsalenz1.png");
+    }
+    .v .body .margin-lr {
+    padding: 0px;
+    margin: 0px;
+    font-size: 15px;
+    outline: none;
+    }
+    
+    #hide{
+    visibility: hidden;
+    }
+    .p-bar{
+        height: 50px;
+    }
+    div.margin-lr{
+        padding-left: 15px;
+    margin-right: 15px;
+    outline: none;
+    }
+    div h1{
+        font-size: 30px;
+        
+    }
+    div hr{
+        margin-left: 5px;
+    margin-right: 5px;
+    }
+    button[id="bar"]{
+        visibility: visible;
+    }
+    div.bt{
+        content: url("./images/bar.png");
+        float: right;
+        visibility: visible;
+        display: inline;
+    }
+    
+    #br-none{
+         display: inline-block;
+         position:relative;
+        text-decoration: none;
+        margin: 0px;
+         
+          height: 60px;
+        border-right: 1px black solid; 
+   }
+   
+   div.dropdown{
+       visibility: visible;
+       display: block;
+   }
+  div a:hover{
+    color: #37B9F1;
+    text-decoration: none;
+   }
+   
+  div.margin-img-a  div.margin-right div.margin-img-b div.margin-left  {
+        
+       padding-left: 0px;
+       margin-left: 0px;
+       padding-right: 0px;
+       margin-right: 0px;
+       float: none;
+       text-align: center;
+       margin:0px 0px 0px 0px;
+   }
+   div.abtimg1{
+    float: none; margin-right: 0px;
+    visibility: hidden;
+    }
+   div.abtimg2{
+    float: none; margin-left: 0px;
+    visibility: hidden;
+    }
+   img.output{
+       width: 100%;
+   }
+   #line{
+       margin:0px  25px 0px;
+   }
+     p{
+         margin-bottom: 0px;
+     }
+    div#abt{
+         padding:0px 15px 0px 15px ;
+     }
+  
+}
+#abt{
+    text-align: center;
+    padding:0px 200px 0px 200px;
+}
+#outpd{
+    padding:20px;
+    
+    
+}
+.abtimg1{
+    float: right; margin-right: 150px;
+}
+.abtimg2{
+    float: left; margin-left: 150px;
+}
+.output{
+    width:40%;
+    border-radius: 2px;
+    
+    
+}
+.dropdown{
+visibility: hidden;
+display: none;
+}
+.lg{
+    content: url("./images/logo.jpeg");
+    height: 40px;
+    display: inline;
+}
+
+input[type="image"]{
+    outline: none;
+}
+
+button:focus{
+    outline: none;
+}
+
+.p-bar {
+    width: 100%;
+    position: fixed;
+    z-index: 00;
+    border-bottom: 1px #37B9F1 solid;
+}
+
+.p-black {
+    background-color: black;
+}
+
+.p-hover-black:hover {
+    color: black;
+    background-color: #F7F7FE;
+    text-decoration: none;
+
+}
+ 
+
+.p-button {
+    border: none;
+    overflow: hidden;
+    text-decoration: none;
+    color: #F7F7FE;
+    background-color: inherit;
+    text-align: middle;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.p-bar-item {
+    padding: 12px 30px;
+    float: right;
+    outline: 0;
+    margin: 0;
+    margin-bottom: 0;
+}
+
+.p-bar li {
+    float: left;
+    border-right: 1px #37B9F1 solid;
+}
+
+.p-bar ul {
+    float: right;
+}
+
+.body {
+    background-color: black;
+}
+
+.p-bar li:last-child {
+    border: none;
+}
+
+nav > ul {
+    margin: 0;
+}
+
+hr {
+    color: #F7F7FE;
+    height: 2px;
+    background-color: #F7F7FE;
+    border-width: 0;
+    margin: 90px;
+}
+
+.margin-left {
+    margin-left: 90px;
+}
+
+.margin-right {
+    margin-right: 90px;
+}
+
+.margin-lr {
+    padding-left: 90px;
+    margin-right: 90px;
+}
+
+.margin-img {
+    margin-left: 500px;
+}
+
+.margin-imgs {
+    margin-right: 500px;
+}
+
+.footer {
+    padding: 7.5px;
+    text-align: center;
+    left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+    position: relative;
+    background: black;
+    border-top: 1px solid #F7F7FE;
+}
+
+div > h5 {
+    margin: 0;
+}
+
+div > h4 {
+    margin: 0;
+}
+
+.active {
+    color: #F7F7FE;
+    background-color: #37B9F1;
+    text-decoration: none;
+}
+.neighbour-right{
+    border-left: 0.5px solid black;
+    
+}
+.neighbour-left{
+    border-right: 0.5px solid black;
+}
+
+.container {
+
+    text-align: center;
+    color: #F7F7FE;
+}
+
+.centered {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.round {
+    border-radius: 50%;
+    border: 5px solid #F7F7FE;
+    background: #F7F7FE;
+    border-color: #37B9F1;
+}
+
+.p-border {
+    border: 5px solid #37B9F1;
+}
+
+.contact-h {
+    color: #F7F7FE;
+    padding: 10px;
+    text-align: center;
+}
+
+.contact-h:hover {
+    color: #F7F7FE;
+    text-decoration: underline;
+}
+
+.margin-img-a {
+    margin-left: 470px;
+}
+
+.margin-img-b {
+    margin-right: 470px;
+}
+.gallery-box {
+     width: 1185px;
+     height: 350px;
+     margin-left: 90px;
+     margin-right: 90px;
+}
+
+.v{
+    color: #37B9F1;
+}
+.ls{
+    letter-spacing: 3px;
+}
+.bm{
+    content: url("./images/picsalenz2.png");
+    background-blend-mode: multiply;
+    max-width:100%; 
+    height:auto;
+}
+.button0{
+    background-color:#37B9F1 ;
+    border: 1px solid #37B9F1 ;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    padding: 8px 32px;
+    outline: none;
+    margin: 4px;
+    border-radius: 2px;
+}
+.button1:hover{
+    box-shadow: 0 7px 14px 0 black , 0 5px 10px 0 #F7F7FE;
+
+}
+.button0:focus{
+    outline: none;
+}
+.button0:hover{
+    outline: none;
+}
+.bt {
+    
+    
+    height: 48px;
+    padding: 10px;
+     display: none;
+    visibility: hidden;
+  }
+  
+
+
+*:focus{
+    outline: 0 !important;
+}
+  .fas .fa-bars{
+    border: none;
+   
+    margin: 0px;
+    padding: 0px;
+  }
+
+ 
+
+ #dropdown{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+   
+    
+    position: relative;
+    z-index: 10;
+    float:right;
+ }
+ .dropdown-content {
+    display: none;
+    position:relative;
+    background-color: black;
+    width: 200px;
+     float: right;
+   margin-top:0.75px;
+   
+     
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color:white;
+     
+    text-decoration: none;
+    display:relative;
+    text-align: center;
+  }
+  .dropdown:hover .dropdown-content {display: block; }
+  
+
+  

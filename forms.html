@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign Up</title>
+	<link rel="icon" type="icon" href="images/favicon.ico" sizes="16x16">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+	<style>
+		body{
+			color: white;
+			font-family:"Alegreya Sans SC", sans-serif;
+   letter-spacing: 1px;
+			padding-right: 40px;
+			padding-left: 40px;
+		}
+
+		input{
+			margin-left:200px;
+			margin: 10px;
+			width: 152px;
+			background-color: black;
+			border: 1px solid white ;
+			color: white;
+			outline: none;
+			font-family:"Alegreya Sans SC", sans-serif;
+   letter-spacing: 1px;
+		}
+
+		select{
+			margin-left:200px;
+			margin: 10px;
+			width: 150px;
+			background-color: black;
+			border: 1px solid white ;
+			color: white;
+		}
+
+		label{
+			display: inline-block;
+			width:150px ;
+
+		}
+
+		input[name="email"]{
+			min-width: 21rem;
+			background-color: black;
+			border: 1px solid white ;
+			color: white;
+		}
+
+		input[name="Address"]{
+			min-width: 21rem;
+			background-color: black;
+			border: 1px solid white ;
+			color: white;
+		}
+
+		input[id="submit"]{
+			width: 345px;
+			background-color: lightskyblue;
+			border: 1px solid white ;
+			color: white;
+		}
+
+		input[id="homepage"]{
+			width: 345px;
+			background-color: black;
+			border: 1px solid white ;
+			color: white;
+		}
+
+		select[name="code"]{
+			width: 4rem;
+		}
+
+		select[name="country"]{
+			width: 10rem;
+		}
+	</style>
+</head>
+<body bgcolor="black">
+	<br>
+<center>
+	<img src="images/logo.jpeg" height="85px">
+</center>
+<br>
+<fieldset>
+<h1>
+	Create an account
+</h1>
+<hr>
+<form>
+	<h4>
+	
+		<input type="file" name="img" style="float:right;">
+		<br>
+	<label>Full Name :</label>
+	<input type="text" name="fname" id="fname" placeholder="First Name" >
+	<input type="text" name="lname" id="lname" style="margin:10px;" placeholder="Last Name">
+    <br>
+	<label>E-Mail ID :</label>
+	<span>
+	<input type="email" name="email" id="email">
+	</span>
+	<br>
+	<label>Mobile Number :</label>
+	<select name="code">
+		<option>+91</option>
+		<option>+1</option>
+		<option>+49</option>
+	</select>
+	<input type="tel" name="mnum" id="mnum" >
+	<br>
+	<label>Address :</label>
+	<input type="text" name="Address" id="Address" placeholder="Street Address Line 1">
+	<br>
+	<label></label>
+	<input type="text" name="Address" id="Address" placeholder="Street Address Line 2">
+	<br>
+	<label></label>
+	<input type="text" name="city" placeholder="City">
+	<input type="text" name="state" placeholder="State">
+	<br>
+	<label>Country :</label>
+	<select name="country">
+    <option>--Select--</option>
+	<option>India</option>
+	<option>America</option>
+	<option>Germany</option>	
+	</select>
+	<input type="text" name="pincode" placeholder="Pincode">
+	<br>
+	<label></label>
+	<input type="button" name="submit" id="submit" value="Submit">
+	<br>
+	<label></label>
+	<a href="index.html">
+	<input type="button" name="homepage" id="homepage" value="Go Back To Home Page">
+	</a>
+	</fieldset>
+</h6>
+</form>	
+</body>
+</html>

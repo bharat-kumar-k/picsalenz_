@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="picsalenz.css">
+    <title>Picsalenz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="icon" type="icon" href="images/favicon.ico" sizes="16x16">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body class="body">
+
+
+    <nav class="p-bar p-black">
+        <a href="index.html"><div class="lg"></div></a>
+        
+        <div class="dropdown" style=" float: right; z-index:1; position: relative;">
+           <button id="dropdown"  ><div class="bt"></div></button> 
+      <br>
+           <ul class="dropdown-content" style="list-style-type:none;">
+             <li id="br-none" class="p-bar-item "><a href="index.html">Home</a></li>
+             <li id="br-none" class="p-bar-item"><a href="about.html">About</a></li>
+             <li id="br-none" class="p-bar-item"><a href="contact.html">Contact</a></li>
+           </ul>
+         </div> 
+         
+            
+         
+        
+        <ul style="list-style-type:none;" id="hide">
+            <font color="white">
+
+                <li><a href="index.html" class="p-button p-bar-item  p-hover-black active ">Home</a></li>
+                 
+                <li><a href="about.html" class="p-button p-bar-item p-hover-black">About</a></li>
+                <li><a href="contact.html" class="p-button p-bar-item p-hover-black">Contact</a></li>
+            </font>
+        </ul>
+        
+
+    </nav>
+    
+        <br><br><br><br><br><br> <br> 
+        <h1 style="color: white;;"><center>Upload image</center></h1>
+        <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
+        <center id="outpd"><img id="output" class="output"></center><br>
+        <center><p id="submit"></p><button class="button0 button1"><label for="file" id="newimg" style="cursor: pointer;margin:0px; ">Select Image</label></button></center>
+        <br><br>
+        <div class="footer" id="base" style="position: fixed;color: white;">
+            <h5> Picsalenz</h5>
+        </div>
+
+        
+    <script>
+        var loadFile = function(event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+            document.getElementById("output").style="border: whitesmoke 2px solid;";
+            document.getElementById("newimg") .innerHTML='Change Image';
+            document.getElementById("submit").innerHTML='<button class="button0 button1" style="background-color:#0052a2;border:#0052a2;"> Upload Image </button>';
+            document.getElementById("base").style="position: fixed; color: white";
+        };
+        
+        </script>
+        
+</body>
+</html>

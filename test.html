@@ -11,18 +11,45 @@
     
 var name=prompt("Welcome to Picsalenz, Enter ur name")    ;
 if(name){
-alert("Welcome "+name+", Lets add some numbers");}
+alert("Welcome "+name+", Lets play with some numbers");}
 else{
-    alert("Welcome Guest, Lets add some numbers");}
+alert("Welcome Guest, Lets Play with some numbers");}
 
 var num1=Number(prompt("Enter First Number: "));
 var num2=Number(prompt("Enter Second Number: "));
+var oper=Number(prompt("choose any operations:\n1)Addition\n2)Subraction\n3)Multiply\n4)Division "));
 if(num1 && num2){
 document.getElementById("name").innerHTML="The number You Entered "+num1+" and "+num2;}
 function bk(){
 document.getElementById("name").style.color="cyan";
 if(num1 && num2){
-document.getElementById("name").innerHTML="Sum of two numbers are "+(num1+num2);}
+    switch(oper){
+        case "add" : 
+        case "addition" :
+        case 1 :
+        document.getElementById("name").innerHTML="Addition of two numbers are "+(num1+num2);
+         break;
+        case "sub" : 
+        case "subraction" :
+        case 2 :
+        document.getElementById("name").innerHTML="Subraction of two numbers are "+(num1-num2);
+        break;
+        case "mul" : 
+        case "multiplication" :
+        case 3 :
+        document.getElementById("name").innerHTML="Multiplication of two numbers are "+(num1*num2);
+        break;
+        case "div" : 
+        case "division" :
+        case 4 :
+        document.getElementById("name").innerHTML="Division of two numbers are "+(num1/num2);
+        break;
+        default:document.getElementById("name").innerHTML="invalid selection" ;
+         
+        
+    }
+}
+ 
 document.getElementById("bg").style.backgroundColor="darkgray";
 document.getElementById("logo").src=" logo.jpeg"
 
@@ -31,6 +58,6 @@ document.getElementById("logo").src=" logo.jpeg"
  
 </script>
 
-<button class="click" onclick="bk()">click here</button>
+<button class="click" onclick="bk()">click here for answer</button>
 </body>
 </html>

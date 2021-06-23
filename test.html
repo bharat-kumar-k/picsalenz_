@@ -10,13 +10,19 @@
 <script>
     
 var name=prompt("Welcome to Picsalenz, Enter ur name")    ;
-alert("Welcome "+name+", Lets add some numbers");
+if(name){
+alert("Welcome "+name+", Lets add some numbers");}
+else{
+    alert("Welcome Guest, Lets add some numbers");}
+
 var num1=Number(prompt("Enter First Number: "));
 var num2=Number(prompt("Enter Second Number: "));
-document.getElementById("name").innerHTML="The number You Entered "+num1+" and "+num2;
+if(num1 && num2){
+document.getElementById("name").innerHTML="The number You Entered "+num1+" and "+num2;}
 function bk(){
 document.getElementById("name").style.color="cyan";
-document.getElementById("name").innerHTML="Sum of two numbers are "+(num1+num2);
+if(num1 && num2){
+document.getElementById("name").innerHTML="Sum of two numbers are "+(num1+num2);}
 document.getElementById("bg").style.backgroundColor="darkgray";
 document.getElementById("logo").src=" logo.jpeg"
 
